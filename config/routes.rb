@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
 
   root 'static_pages#home'
+  
 
   #get 'static_pages/help'
   get  '/help', to: 'static_pages#help'
@@ -15,6 +16,8 @@ Rails.application.routes.draw do
   get  '/contact', to: 'static_pages#contact'
 
   get '/signup', to: 'users#new'
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
